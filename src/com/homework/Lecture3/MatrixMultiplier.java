@@ -48,27 +48,6 @@ public class MatrixMultiplier {
         }
     }
 
-        /*int a = first.length;
-        int b = second.length;
-        int c = second[0].length;
-
-        int[][] result = new int[a][c];
-
-
-
-        for (int i = 0; i < first.length; i++) {
-            for (int j = 0; j < second.length; j++) {
-
-
-                for (int n = 0; n < second[0].length; n++) {
-
-                    result[n][i] += first[i][n] * second[j][n];
-
-
-                    if (first.length != second[0].length) {
-                        System.out.println("incorrect data");
-                    }
-                       else System.out.println(Arrays.deeptoString(result));*/
 
                     }
                 }
