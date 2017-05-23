@@ -1,5 +1,7 @@
 package com.homework.Lecture3;
 
+import java.util.Arrays;
+
 public class YourOwnBinarySearch {
     static int[] array = {1, 4, 7, 10, 17, 30, 48};
     static int element = 10;
