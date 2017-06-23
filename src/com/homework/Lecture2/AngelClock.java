@@ -5,16 +5,23 @@ package com.homework.Lecture2;
  */
 public class AngelClock {
     public static void main(String[] args) {
-        int hours = 2;
+        int hours = 28;
         int mins = 30;
         double result = 0;
+        double angel;
 
-
-        result = (hours +((double)mins /60)) * 30 - (mins * 6);
-
-        System.out.println("Angle between hours and minute narrows is " + Math.abs((int) result));
-
-
+        if ((hours <= 23) && (mins <= 59)) {
+            result = (hours + ((double) mins / 60)) * 30 - (mins * 6);
+            if (result >= 180) {
+                angel = 360 - result;
+            }
+            else {
+                angel = result;
+            }
+            System.out.println("Angle between hours and minute narrows is " + Math.abs((int) angel));
+        }
+        else {
+            System.out.println("Incorrect data");
+        }
     }
-
 }

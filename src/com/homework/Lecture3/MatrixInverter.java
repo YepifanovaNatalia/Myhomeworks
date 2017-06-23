@@ -15,40 +15,27 @@ public class MatrixInverter {
                 {7, 7, 4, 1},
                 {7, 5, 4, 1}
         };
-        int[] n = new int[4];
-        int[] m = new int[4];
         int temp;
 
-
-
-
-
-
-        for(int i = 0; i < n.length; i++) {
-            for (int j = 0; j < m.length; j++) {
-                if ((i != j) && (i < j)){
-                temp = array[i][j];
-                array[i][j] = array[j][i];
-                array[j][i] = temp;}
-
-
-            }
+        if (array.length != array[0].length) {
+            System.out.println("The matrix isn`t square");
         }
-        for(int i = 0; i < n.length; i++){
-
-
-
-
-
-            System.out.println(Arrays.toString(array[i]));
-
-
-
+        else {
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[0].length; j++) {
+                    if ((i != j) && (i < j)) {
+                        temp = array[i][j];
+                        array[i][j] = array[j][i];
+                        array[j][i] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < array.length; i++) {
+                System.out.println(Arrays.toString(array[i]));
+            }
         }
     }
 }
-
-
 
 
 

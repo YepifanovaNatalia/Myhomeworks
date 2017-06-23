@@ -9,8 +9,8 @@ public class SwitchValue {
         int second = 10;
 
         second = second + first;
-        first = second-first;
-        second = second-first;
+        first = second - first;
+        second = second - first;
 
         System.out.println("First = " + first + " , second = " + second);
     }

@@ -10,19 +10,14 @@ public class Insertsort {
         int[] array = {5, 7, 9, 15, 10, -1, 8};
         int temp;
 
-        for(int i = 0; i< array.length; i++ ) {
+        for(int i = 0; i < array.length; i++ ) {
             temp = array[i];
-            for(int j = i-1; j >= 0 && array[j] > temp;j--){
-                array[j+1] = array[j];
+            for(int j = i - 1; j >= 0 && array[j] > temp; j--){
+                array[j + 1] = array[j];
                 array[j] = temp;
-
-
             }
         }
-
-
             System.out.println(Arrays.toString(array));
-
         }
     }
 
